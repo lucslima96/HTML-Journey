@@ -1,0 +1,186 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Remove a barra de rolagem do corpo */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Garante que o wrapper ocupe a altura total da viewport */
+}
+
+.menu {
+    width: 200px; /* Define a largura do menu */
+    background-color: #12121a;
+    color: #f39025;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Evita que o menu encolha em telas menores */
+    overflow-y: auto; /* Permite rolagem no menu se necessário */
+}
+
+.menu h2 {
+    color: #f39025;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #f39025;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que o main ocupe o espaço restante */
+    overflow: hidden; /* Remove overflow da seção principal */
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0; /* Evita que o header encolha */
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.header h1 {
+    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+    color: #333333;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 1; /* Para ocupar todo o espaço disponível */
+    overflow-y: auto; /* Permite rolagem vertical apenas na seção de conteúdo */
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content p, .content h2, .content h3, .content ul, .content ol {
+    margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+    line-height: 1.6; /* Melhor legibilidade */
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content table, .content th, .content td {
+    border: 1px solid #ddd;
+}
+
+.content th, .content td {
+    padding: 12px;
+    text-align: left;
+}
+
+.content th {
+    background-color: #f39025;
+    color: white;
+}
+
+.content tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column; /* Alinha os campos do formulário em uma coluna */
+    gap: 10px; /* Espaçamento entre os campos */
+}
+
+.content form label {
+    margin-bottom: 5px;
+}
+
+.content form input, .content form textarea, .content form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.content form button {
+    background-color: #f39025;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content form button:hover {
+    background-color: #e07b20;
+}
+
+.footer {
+    background-color: #212830;
+    color: #f39025;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0; /* Evita que o footer encolha */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .content table, .content th, .content td {
+        font-size: 0.9rem;
+    }
+}
