@@ -43,6 +43,11 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+table img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -52,11 +57,7 @@ th {
     background-color: #c90a02;
     color: white;
 }
-img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Tamanho máximo da imagem */
-}
+
 @media (max-width: 600px) {
     th, td {
         display: block;
