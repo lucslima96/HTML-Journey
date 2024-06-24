@@ -7,6 +7,7 @@ ul { list-style: none; padding-left: 5px; }
 a { font-weight: bold; color: #c90a02; text-decoration: none;}
 .logo{
     background-color: #090f13;
+    text-align: center;
 }
 .bar {
     background-color: #c90a02;
