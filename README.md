@@ -7,3 +7,6 @@ Você pode acessar meu projeto onde explorei minhas primeiras tags HTML no GitHu
 
 ### Meu Primeiro Website
 Você pode acessar o meu primeiro website hospedado no GitHub Pages [aqui](https://lucslima96.github.io/HTML-Journey/Meu%20primeiro%20site/index.html).
+
+### Projeto Wikipedia: Resident Evil
+Este é um projeto para recriar uma página da Wikipedia com o tema Resident Evil, acesse a página [aqui](https://lucslima96.github.io/HTML-Journey/Projeto%20Resident%20Evil%20Wiki/index.html#jogos).
